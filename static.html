@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <!-- Meta Tag -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!-- Ext CSS -->
+  <link rel="stylesheet" href="css/foundation.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Title -->
+  <title>Foundation</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- Navbar -->
+    <nav class="top-bar">
+      <div class="top-bar-left">
+        <!-- Menu -->
+        <ul class="menu">
+          <li><a href="" class="nav-item nav-link">Home</a></li>
+          <li><a href="" class="nav-item nav-link">Posts</a></li>
+          <li><a href="" class="nav-item nav-link">Pages</a></li>
+        </ul>
+        <!-- End Menu -->
+      </div>
+
+      <!-- SearchBar -->
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" placeholder="Search"></li>
+          <li><button type="button" class="button">Search</button></li>
+        </ul>
+      </div>
+      <!-- End SearchBar -->
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Logo + Responsive grid -->
+    <div class="row align-center">
+      <div class="small-4 columns" id="logo">
+        <img src="img/logo.png" alt="company logo">
+      </div>
+      <div class="medium-8 small-12 columns" id="responsive-img">
+        <img src="https://placehold.it/850x90/007bff/ffffff/&amp;text=Responsive Img" alt="advertisement">
+      </div>
+    </div>
+    <!-- End Logo + Responsive grid -->
+
+    <!-- Menu Bar -->
+    <div class="top-bar align-center">
+      <ul class="menu">
+        <li><a href="" class="nav-item nav-link">Tutorials</a></li>
+        <li><a href="" class="nav-item nav-link">Reviews</a></li>
+        <li><a href="" class="nav-item nav-link">News</a></li>
+        <li><a href="" class="nav-item nav-link">Books</a></li>
+        <li><a href="" class="nav-item nav-link">Softwares</a></li>
+      </ul>
+    </div>
+    <!-- End Menu Bar -->
+    
+  </header>
+  <!-- End Header -->
+
+  <!-- Main Container -->
+  <main class="grid-container">
+    <!-- Divided -->
+    <div class="row">
+      <!-- Main Content -->
+      <div class="large-9 small-12 columns">
+        <!-- Breadcrumb -->
+        <nav aria-label="You are here:" role="navigation">
+          <ul class="breadcrumbs">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Article</a></li>
+            <li><span class="show-for-sr">Current: </span> Smartphone on Table</li>
+          </ul>
+        </nav>
+        <!-- End Breadcrumb -->
+
+        <!-- Article -->
+        <div style="border:1px solid #999;padding:1rem;;border-radius:.25rem">
+          <article>
+            <h1>About</h1>
+            <small>Published a month ago</small> <small>by <a href="">Author</a></small>
+            <hr/>
+            <p>Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes a fully customizable, responsive grid, a large library of Sass mixins, commonly used JavaScript plugins, and full accessibility support.</p>
+            <h5>Contact Us</h5>
+            <p>Feel free to get in touch with us via the form below.</p>
+            <form onsubmit="startProgress()" data-abide novalidate>
+              <div data-abide-error class="alert callout" style="display: none;">
+                <p><i class="fi-alert"></i> There are some errors in your form.</p>
+              </div>
+              <div class="row">
+                <div class="columns large-6 medium-6 small-12">
+                  <label for="firstName">First Name
+                    <input id="firstName" type="text" placeholder="First Name" aria-describedby="firstNameHint" aria-errormessage="formError" required>
+                    <span class="form-error">
+                      Yo, you had better fill this out, it's required.
+                    </span>
+                  </label>
+                  <p class="help-text" id="firstNameHint">Input first name</p>
+                </div>
+                <div class="columns large-6 medium-6 small-12">
+                  <label for="firstName">Last Name
+                    <input id="firstName" type="text" placeholder="Last Name" aria-describedby="lastNameHint" aria-errormessage="formError" required>
+                    <span class="form-error">
+                      Yo, you had better fill this out, it's required.
+                    </span>
+                  </label>
+                  <p class="help-text" id="lastNameHint">Input last name</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label for="inputMail">Email
+                    <input id="inputMail" type="email" placeholder="example@domain.com" aria-describedby="emailHint" aria-errormessage="formError" required pattern="email">
+                    <span class="form-error">
+                      Please input valid email address.
+                    </span>
+                  </label>
+                  <p class="help-text" id="emailHint">Here's how you use this input field!</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label for="inputCateg">Contact Category
+                    <select id="inputCateg" required>
+                      <option value=""></option>
+                      <option value="Question">Question</option>
+                      <option value="Request">Request</option>
+                      <option value="Help">Help</option>
+                    </select>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label for="inputMsg">Message
+                    <textarea id="inputMsg" placeholder="Please enter a message in the textarea." rows="5" required></textarea>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <label>Switch to Agree</label>
+                  <div class="switch">
+                    <input class="switch-input" id="invalidSwitch" type="checkbox" name="invalidSwitch" aria-describedby="switchHint" aria-errormessage="formError" required>
+                    <label class="switch-paddle" for="invalidSwitch">
+                      <span class="show-for-sr">Switch to Agree</span>
+                    </label>
+                    <span class="form-error">
+                      Yo, you had better switch this on, it's required.
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="columns">
+                  <button type="submit" class="button" id="submitForm">Submit form</button>
+                </div>
+              </div>
+              <div class="progress" role="progressbar" tabindex="0" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-meter"></div>
+              </div>
+            </form>
+            <hr>
+            <h5>Frequently Asked Question</h5>
+            <ul class="accordion" data-accordion data-allow-all-closed="true">
+              <li class="accordion-item is-active" data-accordion-item>
+                <!-- Accordion tab title -->
+                <a href="#" class="accordion-title">What is a dog?</a>
+                <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+                <div class="accordion-content" data-tab-content>
+                  <p>A dog is a type of domesticated animal. Known for its loyalty and faithfulness, it can be found as a welcome guest in many households across the world.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">What kinds of dogs are there?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>There are many breeds of dogs. Each breed varies in size and temperament. Owners often select a breed of dog that they find to be compatible with their own lifestyle and desires from a companion.</p>
+                </div>
+              </li>
+              <li class="accordion-item" data-accordion-item>
+                <a href="#" class="accordion-title">How do you acquire a dog?</a>
+                <div class="accordion-content" data-tab-content>
+                  <p>Three common ways for a prospective owner to acquire a dog is from pet shops, private owners, or shelters.</p>
+                  <p>A pet shop may be the most convenient way to buy a dog. Buying a dog from a private owner allows you to assess the pedigree and upbringing of your dog before choosing to take it home. Lastly, finding your dog from a shelter, helps give a good home to a dog who may not find one so readily.</p>
+                </div>
+              </li>
+            </ul>
+          </article>
+        </div>
+        <!-- End Article -->
+      </div>
+      <!-- End Main Content -->
+      <hr>
+      <!-- Sidebar -->
+      <aside class="large-3 small-12 columns">
+        <section id="popular">
+          <h5>Popular Posts</h5>
+          <ul class="vertical menu">
+            <li><a href="">Smartphone on Table</a></li>
+            <li><a href="">Beach and Hill</a></li>
+            <li><a href="">Town across the River</a></li>
+            <li><a href="">Girl with Pumpkin</a></li>
+            <li><a href="">Lake in British</a></li>
+          </ul>
+        </section>
+        <hr/>
+        <section id="label">
+          <h5>Label</h5>
+          <ul class="vertical menu">
+            <li><a href="">Movies <span class="badge">25</span></a></li>
+            <li><a href="">Games <span class="badge">25</span></a></li>
+            <li><a href="">Aplication <span class="badge">25</span></a></li>
+            <li><a href="">Life Hacks <span class="badge">25</span></a></li>
+            <li><a href="">Games <span class="badge">25</span></a></li>
+            <li><a href="">Aplication <span class="badge">25</span></a></li>
+          </ul>
+        </section>
+      </aside>
+      <!-- End Sidebar -->
+    </div>
+    <!-- End Divided -->
+  </main>
+  <!-- End Main Container -->
+  <hr>
+  <!-- Footer -->
+  <footer>
+    <div class="row align-center text-center">
+      <div class="columns large-6">
+          <h5>About Foundation</h5>
+          <p>Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes a fully customizable, responsive grid, a large library of Sass mixins, commonly used JavaScript plugins, and full accessibility support.</p>
+      </div>
+    </div>
+      <!-- Navbar -->
+      <nav class="top-bar">
+          <div class="top-bar-left">
+            <!-- Menu -->
+            <ul class="menu">
+              <li><a href="static.html" class="nav-item nav-link">About</a></li>
+              <li><a href="static.html" class="nav-item nav-link">Privacy</a></li>
+              <li><a href="static.html" class="nav-item nav-link">Disclaimer</a></li>
+            </ul>
+            <!-- End Menu -->
+          </div>
+    
+          <!-- SearchBar -->
+          <div class="top-bar-right">
+            <ul class="menu">
+              <li><div class="">&copy; 2019</div></li>
+            </ul>
+          </div>
+          <!-- End SearchBar -->
+        </nav>
+        <!-- End Navbar -->  
+  </footer>
+  <!-- End Footer -->
+
+  <!-- Script -->
+  <script src="js/vendor/jquery.js"></script>
+  <script src="js/vendor/what-input.js"></script>
+  <script src="js/vendor/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script>
+  $(document).ready(function(){
+    $('.progress').hide();
+  })
+  $("#submitForm").click(function () {
+    $('.progress').show();    
+    $(".progress-meter").animate({width:"100%"},2500);});
+  </script>
+  <!-- End Script -->
+</body>
+</html>
