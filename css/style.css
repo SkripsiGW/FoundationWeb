@@ -30,3 +30,7 @@ section {
 section h5 {
   padding:1rem 0
 }
+
+.media-img {
+  max-width: 75px;
+}
