@@ -8,7 +8,7 @@
   
   <!-- Ext CSS -->
   <link rel="stylesheet" href="css/foundation.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/app.css">
   
   <!-- Title -->
   <title>Foundation</title>
@@ -92,7 +92,7 @@
             <p>Foundation is the most advanced responsive front-end framework in the world. Quickly go from prototype to production, building sites or apps that work on any kind of device with Foundation. Includes a fully customizable, responsive grid, a large library of Sass mixins, commonly used JavaScript plugins, and full accessibility support.</p>
             <h5>Contact Us</h5>
             <p>Feel free to get in touch with us via the form below.</p>
-            <form onsubmit="startProgress()" data-abide novalidate>
+            <form data-abide novalidate>
               <div data-abide-error class="alert callout" style="display: none;">
                 <p><i class="fi-alert"></i> There are some errors in your form.</p>
               </div>
@@ -273,7 +273,7 @@
     $('.progress').hide();
   })
   $("#submitForm").click(function () {
-    $('.progress').show();    
+    $('.progress').show();
     $(".progress-meter").animate({width:"100%"},2500);});
   </script>
   <!-- End Script -->
